@@ -1,0 +1,32 @@
+{
+  "name": "ht-joi",
+  "version": "0.0.1",
+  "description": "Wrapper for Joi for working with hudson-taylor",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "joi": "^6.4.3"
+  },
+  "devDependencies": {
+    "hudson-taylor": "^6.0.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudson-taylor/ht-joi.git"
+  },
+  "keywords": [
+    "hudson-taylor",
+    "schema"
+  ],
+  "author": "Adam Brady <adam@boxxen.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hudson-taylor/ht-joi/issues"
+  },
+  "homepage": "https://github.com/hudson-taylor/ht-joi#readme"
+}
