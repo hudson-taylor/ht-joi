@@ -56,4 +56,23 @@ describe("HT Joi", function() {
 
   });
 
+  describe("document/generate", function() {
+
+    it("should convert schema to literal schema and back", function() {
+
+      var _schema = [
+        'key',
+        5
+      ];
+
+      var joiSchema = joi.compile(_schema);
+
+      var htSchema = htJoi(_schema);
+
+      assert.deepEqual(joi.compile(joiSchema), htSchema.document());
+
+    });
+
+  });
+
 });
